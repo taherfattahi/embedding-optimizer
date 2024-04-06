@@ -20,7 +20,7 @@ def get_property(prop):
 
 
 setup(
-    name='embedding-optimizer',
+    name='embedding_optimizer',
     version=get_property('__version__'),
     description='Strategies for Efficient Data Embedding: Creating Embeddings Optimized for Accuracy - Creating Embeddings Optimized for Storage',
     long_description=README,
@@ -29,5 +29,5 @@ setup(
     author=get_property('__author__'),
     author_email=get_property('__author_email__'),
     license=get_property('__license__'),
-    packages=['embedding-optimizer'],
+    packages=['embedding_optimizer'],
 )
