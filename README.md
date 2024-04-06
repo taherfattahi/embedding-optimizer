@@ -64,7 +64,6 @@ Also can be found on [pypi](https://pypi.org/project/embedding-optimizer)
 ### How can I use it?
   - Install the package by pip package manager.
   - After installing, you can use it and call the library.
-  - 
 
 ### Issues
 Feel free to submit issues and enhancement requests.
