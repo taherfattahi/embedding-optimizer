@@ -1,6 +1,8 @@
 # Strategies for Efficient Data Embedding
 Two approaches to generating optimized embeddings in the Retrieval-Augmented Generation (RAG) Pattern
 
+[![EmbeddingOptimizer](https://raw.github.com/taherfattahi/embedding-optimizer/master/images/RAG-pattern.webp)](https://pypi.org/project/embedding-optimizer/)
+
 1) Creating Embeddings Optimized for Accuracy
   If you’re optimizing for accuracy, a good practice is to first summarize the entire document, then store the summary text and the embedding together. For the rest of the document, you can simply create overlapping chunks and store the embedding and the chunk text together.
 
