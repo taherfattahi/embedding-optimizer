@@ -2,14 +2,13 @@
 1) Creating Embeddings Optimized for Accuracy
   If you’re optimizing for accuracy, a good practice is to first summarize the entire document, then store the summary text and the embedding together. For the rest of the document, you can simply create overlapping chunks and store the embedding and the chunk text together.
 
-[![EmbeddingOptimizerAccuracy](https://github.com/taherfattahi/embedding-optimizer/raw/main/images/optimize-accuracy.webp
-)]
-
+![EmbeddingOptimizerAccuracy](https://raw.github.com/taherfattahi/embedding-optimizer/master/images/optimize-accuracy.webp
+)
 2) Creating Embeddings Optimized for Storage
   If you’re optimizing for space, you can chunk the data, summarize each chunk, concatenate all the summarizations, then create an embedding for the final summary.
 
-[![EmbeddingOptimizerStorage](https://github.com/taherfattahi/embedding-optimizer/raw/main/images/optimize-storage.webp
-)]
+![EmbeddingOptimizerStorage](https://raw.github.com/taherfattahi/embedding-optimizer/master/images/optimize-storage.webp
+)
 
 
 ## Example
