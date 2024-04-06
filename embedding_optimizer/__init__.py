@@ -5,7 +5,7 @@ Strategies for Efficient Data Embedding: Creating Embeddings Optimized for Accur
 """
 from .optimizer import EmbeddingOptimizer
 
-__version__ = "0.0.5"
+__version__ = "0.0.6"
 __author__ = 'Taher Fattahi'
 __author_email__ = "taherfattahi11@gmail.com"
 __license__ = "MIT"
