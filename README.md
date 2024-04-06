@@ -3,13 +3,13 @@ Two approaches to generating optimized embeddings in the Retrieval-Augmented Gen
 
 [![EmbeddingOptimizer](https://raw.github.com/taherfattahi/embedding-optimizer/master/images/RAG-pattern.webp)](https://pypi.org/project/embedding-optimizer/)
 
-1) Creating Embeddings Optimized for Accuracy
+1) Creating Embeddings Optimized for Accuracy <br />
   If you’re optimizing for accuracy, a good practice is to first summarize the entire document, then store the summary text and the embedding together. For the rest of the document, you can simply create overlapping chunks and store the embedding and the chunk text together.
 
 ![EmbeddingOptimizerAccuracy](https://raw.github.com/taherfattahi/embedding-optimizer/master/images/optimize-accuracy.webp
 )
 
-2) Creating Embeddings Optimized for Storage
+2) Creating Embeddings Optimized for Storage <br />
   If you’re optimizing for space, you can chunk the data, summarize each chunk, concatenate all the summarizations, then create an embedding for the final summary.
 
 ![EmbeddingOptimizerStorage](https://raw.github.com/taherfattahi/embedding-optimizer/master/images/optimize-storage.webp
