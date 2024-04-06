@@ -56,6 +56,26 @@ docs = db.similarity_search(query)
 print(docs[0].page_content)
 
 ```
+
+### Additionally, there are two functions available for summarizing extensive texts via OpenAI
+<b>First method:</b> summarize each part independently
+The first solution would be to split the text into multiple chunks. Then for each chunk, we would ask the API to summarize this part of the text. Then we would join together all the sub-summaries.
+```python
+from embedding_optimizer.optimizer import EmbeddingOptimizer
+
+summary_optimizer = EmbeddingOptimizer(openai_api_key='')
+summary = summary_optimizer.summarize_each_part_independently("What motivated Alex to create the Function of Everything (FoE)?", chunk_size=100)
+```
+<b>Second method:</b> summarize the text incrementally
+For this second solution, our main goal is to solve the problems encountered with our first solution. We want to have a more coherent and structured summary.
+Our solution is to build our summary progressively. Instead of creating multiple sub-summaries and then combining them into one big summary, for each prompt, we are going to provide a chunk of text to summarize and the last 500 tokens of our summary. Then we will ask OpenAI to summarize the chunk of text and add it organically to the current summary.
+```python
+from embedding_optimizer.optimizer import EmbeddingOptimizer
+
+summary_optimizer = EmbeddingOptimizer(openai_api_key='')
+summary = summary_optimizer.summarize_text_incrementally("What motivated Alex to create the Function of Everything (FoE)?", chunk_size=100)
+```
+
 ### Installation
 
 ```sh
